@@ -29,8 +29,8 @@ for key in keys:
     split_ratios = [0.8, 0.85, 0.9]
     model = AirModel().to(device)
     model_type ="complex"
-    model = LSTM_Base().to(device)
-    model_type="simple"
+    # model = LSTM_Base().to(device)
+    # model_type="simple"
     for lookback in lookbacks:
         for split_ratio in split_ratios:
             print("SETTING: ")
